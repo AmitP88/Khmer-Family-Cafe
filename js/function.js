@@ -12,10 +12,14 @@ $(document).ready(function(){
 
 	    $('html, body').animate({
 	        'scrollTop': $target.offset().top
-	    }, 2000, 'swing', function () {
+	    }, 1000, 'swing', function () {
 	        window.location.hash = target;
 	    });
 
+	    if ( $( ".hamburger input" ).attr( "checked", true )) { 
+            // Uncheck the input
+            $( ".hamburger input" ).attr( "checked", false );
+        }
 
 	});
 

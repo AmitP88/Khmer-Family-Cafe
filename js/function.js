@@ -16,6 +16,10 @@ $(document).ready(function(){
 	        window.location.hash = target;
 	    });
 
+	    if ( $( ".hamburger input" ).attr( "checked", true )) { 
+            // Uncheck the input
+            $( ".hamburger input" ).attr( "checked", false );
+        }
 
 	});
 

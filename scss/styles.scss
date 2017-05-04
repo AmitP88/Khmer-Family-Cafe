@@ -149,12 +149,21 @@ h2 {
 }
 
 .intro {
-    color: #434242;
-    background-color: moccasin;
+    color: #f2dede;
+    background: linear-gradient(
+                     rgba(20,10,60, .5), 
+                     rgba(20,10,60, .5)),
+                     url(introS.jpg);
+
     font-weight: 600;
+
+
 }
 
-
+    p {
+    text-align: justify;
+    word-spacing:-2px;     
+    }
 /* ======================================         DAILY SPECIALS            ======================================  */
 
 

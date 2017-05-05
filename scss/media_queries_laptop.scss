@@ -51,6 +51,14 @@ $padding-right-tablet: 5%;
 
 @media only screen and (min-width: 1024px) {
 
+	.intro, .dishes {
+		margin-bottom: 5%;
+	}
+
+	.catering, .about {
+		margin-bottom: 0;
+	}
+
 	header {
 		h1 {
 			font-size: 55px;
@@ -64,7 +72,6 @@ $padding-right-tablet: 5%;
 	h2 {
 		font-size: 32px;
 		padding-top: 2%;
-		padding-bottom: 2%;
 	}
 
 	li a {
@@ -78,7 +85,7 @@ $padding-right-tablet: 5%;
 	}
 
 	.intro {
-		margin-bottom: 20%;
+		margin-bottom: 10%;
 
 		p {
 			padding-left: 0;
@@ -103,7 +110,7 @@ $padding-right-tablet: 5%;
 	}
 
 	.specials {
-		margin-bottom: 20%;
+		margin-bottom: 10%;
 	}
 
 	.catering, .about {
@@ -135,17 +142,10 @@ $padding-right-tablet: 5%;
 
 	.contact {
 
-
-
 		 h2 {
 			padding-left: 0;
 		}		
 	}
-
-	.social-links {
-		margin-top: 5%;
-	}
-
 
 
 	.parallax {
@@ -154,9 +154,41 @@ $padding-right-tablet: 5%;
 
 	.google-maps {
 	    position: relative;
-	    padding-bottom: 45%; // This is the aspect ratio
+	    padding-bottom: 65%; // This is the aspect ratio
 	    overflow: hidden;
 	}
 
+	.dishes {
+		h3 {
+			font-size: 23px;
+    		width: 300px;
+		}
+	}
 
+	.carousel-cell--height {
+		height: 500px;
+	}
+
+	.row-reverse {
+		display: flex; flex-direction: row-reverse; 
+	}
+
+	.contact-info {
+		margin-top: 0;
+	}
+
+	.social {
+		    margin-top: 25%;
+	}
+
+	.about {
+		margin-bottom: 5%;
+	}
+
+}
+
+@media only screen and (min-width: 1200px) {
+	.carousel-cell--height {
+		height: 600px;
+	}	
 }

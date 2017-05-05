@@ -11,8 +11,12 @@ html, body {
   line-height: 1.2;
   overflow-x: hidden; }
 
-p, h1, h2, h3, h4, h5, header {
+h1, h2, h3, h4, h5, header {
   font-family: 'Poiret One', cursive;
+  padding-bottom: 1%; }
+
+p {
+  font-family: 'Roboto', sans-serif;
   padding-bottom: 1%; }
 
 li {
@@ -55,6 +59,7 @@ ul a {
   text-decoration: none; }
 
 a:hover {
+  background-color: aliceblue;
   text-decoration: none; }
 
 .dish a {
@@ -73,7 +78,7 @@ header {
   height: 100px;
   display: flex;
   margin-top: 20px;
-  padding-bottom: 10%;
+  /*padding-bottom: 10%;*/
   background-color: black; }
 
 header img {
@@ -97,6 +102,15 @@ h2 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
+
+.intro {
+  color: black;
+  background-color: antiquewhite;
+  font-weight: 600; }
+
+p {
+  text-align: justify;
+  word-spacing: -2px; }
 
 /* ======================================         DAILY SPECIALS            ======================================  */
 /* How TO - Modal Images (w3schools.com): http://www.w3schools.com/howto/howto_css_modal_images.asp */
@@ -272,6 +286,12 @@ h2 {
   display: none; }
 
 /* ======================================        MENU           ======================================  */
+.dishes {
+  margin-bottom: 20%;
+  background-color: floralwhite;
+  color: #434242;
+  font-weight: 600; }
+
 .dish {
   display: inline-flex;
   padding-bottom: 10%;
@@ -281,7 +301,7 @@ h2 {
   display: inline-flex; }
 
 .dish {
-  width: 100%; }
+  width: 110%; }
 
 .modal {
   z-index: 10000; }

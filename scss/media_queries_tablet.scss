@@ -39,7 +39,29 @@ $padding-bottom-tablet: 2%;
 
 $padding-right-tablet: 5%;
 
+	@media only screen and (min-width: 500px) and (max-width: 600px) {
+		.carousel-cell {
+			img {
+				height: 400px;
+			}
+		}
 
+	
+	}
+
+	@media only screen and (min-width: 601px) and (max-width: 800px) {
+		.carousel-cell {
+			img {
+				height: 450px;
+			}
+		}
+	}
+
+	@media only screen and (min-width: 701px) {
+		.parallax {
+		    min-height: 650px;
+		}	
+	}
 
 
 
@@ -50,6 +72,10 @@ $padding-right-tablet: 5%;
 /*Tablet View*/
 
 @media only screen and (min-width: 768px) {
+
+	.intro, .dishes, .catering, .about {
+		margin-bottom: 10%;
+	}
 
 
 	header {
@@ -76,7 +102,7 @@ $padding-right-tablet: 5%;
 	}
 
 	p {
-		font-size: 20px;
+		font-size: 18px;
 	}
 
 	.specials {
@@ -91,7 +117,9 @@ $padding-right-tablet: 5%;
 
 		h3 {
 			padding-top: 2%;
-			padding-bottom: 5%;			
+			padding-bottom: 5%;	
+			font-size: 20px;
+    		width: 200px;
 		}
 
 		h2 {
@@ -102,7 +130,7 @@ $padding-right-tablet: 5%;
 	}
 
 	.intro {
-		margin-bottom: 15%;
+		margin-bottom: 10%;
 
 		h2 {
 			font-size: 30px;
@@ -110,7 +138,7 @@ $padding-right-tablet: 5%;
 	}
 
 	.specials {
-		margin-bottom: 30%;
+		margin-bottom: 10%;
 	}
 
 	.carousel-cell {
@@ -146,18 +174,80 @@ $padding-right-tablet: 5%;
 		padding-top: 1%;
 	}
 
-	.parallax {
-		min-height: 600px;
-	}
 
 	.google-maps {
 	    position: relative;
 	    padding-bottom: 55%; // This is the aspect ratio
 	    overflow: hidden;
 	}
+
+	#main-column-1, #main-column-2, #dessert-column, #drinks-column {
+		padding-right: 5%;
+	}
 }
 
 @media only screen and (max-width: 800px) {
+
+input {
+  display: block;
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  top: 110px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+
+.hamburger span {
+  display: block;
+  width: 33px;
+  height: 2px;
+  margin-bottom: 5px;
+  position: relative;
+  background: white;
+  border-radius: 25px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+.hamburger span:first-child {
+  transform-origin: 0% 0%;
+}
+
+.hamburger span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+.hamburger input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-20px, -19px);
+}
+
+/*
+ * But let's hide the middle one.
+ */
+.hamburger input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+.hamburger input:checked ~ span:nth-last-child(2) {
+  opacity: 1;
+  transform: rotate(-45deg) translate(0, -1px);
+}
 
   .hamburger {
     cursor: pointer;
@@ -194,6 +284,11 @@ $padding-right-tablet: 5%;
 		padding-top: 10px;
 		padding-bottom: 10px;
 	}
+
+	.hamburger {
+		display: none;
+	}
+
 }
 
 /*===================================================================*/

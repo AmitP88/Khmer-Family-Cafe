@@ -67,7 +67,7 @@ specials.display = function(specialsArray, CarouselLocation) {
 		var formattedFullDishPic = HTMLfulldishPic.replace("%data%", special.image);
 
 		var CarouselText = '<div class="carousel-text text-center">' + formattedName + formattedSpecialDescription + formattedPrice + /*ModalOrderButton +*/ '</div>';
-		var CarouselCell = '<div class="carousel-cell">' + formattedFullDishPic + CarouselText + '</div>';
+		var CarouselCell = '<div class="carousel-cell carousel-cell--height">' + formattedFullDishPic + CarouselText + '</div>';
 
 		$(CarouselLocation).append(CarouselCell);
 

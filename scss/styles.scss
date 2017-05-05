@@ -20,8 +20,14 @@ html, body {
   overflow-x:hidden;
 }
 
-p, h1, h2, h3, h4, h5, header {
+
+h1, h2, h3, h4, h5, header {
   font-family: 'Poiret One', cursive;
+  padding-bottom: $padding-bottom;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
   padding-bottom: $padding-bottom;
 }
 
@@ -73,6 +79,7 @@ ul a {
 }
 
 a:hover {
+  background-color: aliceblue;
   text-decoration: none;
 }
 
@@ -92,13 +99,25 @@ nav li:last-child {
   border-right: none;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* ======================================               HOME                ======================================  */
 
 header {
   height: 100px;
   display: flex;
   margin-top: 20px;
-  padding-bottom: 10%;
+  /*padding-bottom: 10%;*/
   background-color: black;
 }
 
@@ -129,6 +148,16 @@ h2 {
     background-size: cover;
 }
 
+.intro {
+    color: black;
+    background-color: antiquewhite;
+    font-weight: 600;
+}
+
+    p {
+    text-align: justify;
+    word-spacing:-2px;     
+    }
 /* ======================================         DAILY SPECIALS            ======================================  */
 
 
@@ -316,6 +345,13 @@ h2 {
 
 /* ======================================        MENU           ======================================  */
 
+.dishes {
+  margin-bottom: 20%;
+  background-color: floralwhite;
+  color: #434242;
+  font-weight: 600;
+}
+
 .dish {
   display: inline-flex;
   padding-bottom: 10%;
@@ -327,7 +363,7 @@ h2 {
 }
 
 .dish {
-  width: 100%;
+  width: 110%;
 }
 
 .modal {

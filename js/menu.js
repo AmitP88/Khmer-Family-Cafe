@@ -121,7 +121,7 @@ var menu = {
 		{
 			"id": "Nam-Va",
 			"name": "Nam Va",
-			"price": "$5",
+			"price": "$5.00",
 			"description": "Traditional Cambodian dessert with shaved ice with toppings of: leechee jelly, grass jelly, red beans, green beans, basil seed, green tapioca, palm sugar, green and red Asian syrup, and condensed milk.",
 			"image": "images/dishes/Nam-Va.jpg",
 			"altText": "Nam-Va"
@@ -140,7 +140,7 @@ var menu = {
 		{
 			"id": "thai-tea",
 			"name": "Thai Tea or Ice Coffee",
-			"price": "$5",
+			"price": "$5.00",
 			"description": "Your choice of either traditional Thai tea or ice coffee served over ice.",
 			"image": "images/dishes/drinks.jpg",
 			"altText": "thai-tea"
@@ -167,7 +167,11 @@ menu.display = function(foodArray, pageLocation){
 	var Modal = '<div class="modal fade" id="%data%" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">' + formattedModalDialog + '</div>';
     var formattedModal = Modal.replace("%data%", dish.id);
 
-    var HTMLdishInfoContainer = '<div class="menu-info">' + formattedName + formattedPrice + '</div>';
+    //var HTMLdishInfoContainer = '<div class="menu-info bx">' + `<div class="bx">${formattedName}</div>` + `<div class="bx">${formattedPrice}</div>` + '</div>';
+    var HTMLdishInfoContainer = `<div style="flex-grow: 2">${formattedName}</div>` + `<div >${formattedPrice}</div>`;
+
+
+
     var ModalTrigger = '<a data-toggle="modal" data-target="#%data%">' + formattedPic + '</a>';
 	var formattedModalTrigger = ModalTrigger.replace("%data%", dish.id);
 

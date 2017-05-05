@@ -8,7 +8,7 @@
     margin-right: 60px; }
 
   .intro, .dishes, .catering, .about {
-    margin-bottom: 30%; }
+    padding-bottom: 20%; }
 
   .intro {
     padding-left: 5%;
@@ -64,7 +64,7 @@
       padding-bottom: 5%; }
 
   .parallax {
-    min-height: 500px; }
+    min-height: 600px; }
 
   .carousel-cell {
     -webkit-flex-direction: column; }

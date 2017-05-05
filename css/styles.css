@@ -66,6 +66,10 @@ a:hover {
   width: 60px;
   height: 60px; }
 
+.dish img{
+  display: inline;
+}
+
 nav li {
   float: left;
   width: 20%; }
@@ -293,15 +297,15 @@ p {
   font-weight: 600; }
 
 .dish {
-  display: inline-flex;
+  display: flex;
   padding-bottom: 10%;
   margin-right: 5%; }
 
 .menu-title {
   display: inline-flex; }
 
-.dish {
-  width: 110%; }
+/*.dish {
+  width: 110%; }*/
 
 .modal {
   z-index: 10000; }

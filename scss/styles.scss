@@ -79,6 +79,7 @@ ul a {
 }
 
 a:hover {
+  background-color: aliceblue;
   text-decoration: none;
 }
 
@@ -147,6 +148,16 @@ h2 {
     background-size: cover;
 }
 
+.intro {
+    color: black;
+    background-color: antiquewhite;
+    font-weight: 600;
+}
+
+    p {
+    text-align: justify;
+    word-spacing:-2px;     
+    }
 /* ======================================         DAILY SPECIALS            ======================================  */
 
 
@@ -333,6 +344,13 @@ h2 {
 }
 
 /* ======================================        MENU           ======================================  */
+
+.dishes {
+  margin-bottom: 20%;
+  background-color: floralwhite;
+  color: #434242;
+  font-weight: 600;
+}
 
 .dish {
   display: inline-flex;

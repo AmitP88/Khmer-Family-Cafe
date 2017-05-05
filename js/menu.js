@@ -175,7 +175,7 @@ menu.display = function(foodArray, pageLocation){
     var ModalTrigger = '<a data-toggle="modal" data-target="#%data%">' + formattedPic + '</a>';
 	var formattedModalTrigger = ModalTrigger.replace("%data%", dish.id);
 
-    var HTMLdishContainer = '<div class="row dish col-xs-12 col-sm-6" style="display: flex;">' + formattedModalTrigger + formattedModal + HTMLdishInfoContainer + '</div>';
+    var HTMLdishContainer = '<div class="row dish col-xs-12 col-sm-6">' + formattedModalTrigger + formattedModal + HTMLdishInfoContainer + '</div>';
 
     $(pageLocation).append(HTMLdishContainer);
   });

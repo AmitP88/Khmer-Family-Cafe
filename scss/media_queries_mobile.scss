@@ -49,14 +49,11 @@ $padding-right-tablet: 5%;
   width: 60px;
   height: 60px;
   margin-right: 60px;
-  border-style: outset;
-  border-color: #aaa;
-  border-width: 2px;
-  border-radius: 5px;
+
 }
 
 	.intro, .dishes, .catering, .about {
-		margin-bottom: $margin-section-bottom;
+		padding-bottom: 20%;
 	}
 
 	.intro {
@@ -147,7 +144,7 @@ $padding-right-tablet: 5%;
 	}
 
 	.parallax {
-		min-height: 500px;
+		min-height: 600px;
 	}
 	
 	.carousel-cell {
@@ -240,6 +237,13 @@ $padding-right-tablet: 5%;
 
 	@media only screen and (min-width: 375px) {
 
+		a .dish-img {
+		    width: 100px;
+		    height: 80px;
+		    margin-right: 100px;
+		    max-width: none;
+		}		
+
 		header {
 			img {
 				margin-left: $margin-left-mobile;
@@ -266,6 +270,8 @@ $padding-right-tablet: 5%;
 			margin-left: $margin-left-mobile;
 			margin-right: $margin-right-mobile;
 		}
+
+
 
 		.dishes {
 			h3 {

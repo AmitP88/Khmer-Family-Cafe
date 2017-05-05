@@ -1,5 +1,6 @@
 /*		Dish strings	*/
-var HTMLdishPic = '<img src=%data% class="dish-img img-responsive">';
+//var HTMLdishPic = '<img src=%data% class="dish-img img-responsive">';
+var HTMLdishPic = '<img src=%data% class="dish-img">';
 var HTMLdishName = '<h3>%data%</h3>';
 var HTMLdishPrice = '<p class="text-right">%data%</p>';
 var HTMLdishDescription = '<p>%data%</p>';

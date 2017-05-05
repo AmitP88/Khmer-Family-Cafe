@@ -4,6 +4,11 @@
   for styling higher level screensize layouts will be in the
   media_queries.css file.
 */
+
+/**{
+  border: 1px solid black !important;
+}*/
+
 html, body {
   color: white;
   background-color: black;
@@ -14,6 +19,10 @@ html, body {
 h1, h2, h3, h4, h5, header {
   font-family: 'Poiret One', cursive;
   padding-bottom: 1%; }
+
+  h3{
+    margin: auto;
+  }
 
 p {
   font-family: 'Roboto', sans-serif;

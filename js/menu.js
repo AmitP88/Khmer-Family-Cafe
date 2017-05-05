@@ -168,7 +168,7 @@ menu.display = function(foodArray, pageLocation){
     var formattedModal = Modal.replace("%data%", dish.id);
 
     //var HTMLdishInfoContainer = '<div class="menu-info bx">' + `<div class="bx">${formattedName}</div>` + `<div class="bx">${formattedPrice}</div>` + '</div>';
-    var HTMLdishInfoContainer = `<div style="flex-grow: 2">${formattedName}</div>` + `<div >${formattedPrice}</div>`;
+    var HTMLdishInfoContainer = `<div style="flex-grow: 2">${formattedName}</div>` + `<div>${formattedPrice}</div>`;
 
 
 

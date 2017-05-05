@@ -53,7 +53,7 @@ $padding-right-tablet: 5%;
 }
 
 	.intro, .dishes, .catering, .about {
-		margin-bottom: $margin-section-bottom;
+		padding-bottom: 20%;
 	}
 
 	.intro {
@@ -144,7 +144,7 @@ $padding-right-tablet: 5%;
 	}
 
 	.parallax {
-		min-height: 500px;
+		min-height: 600px;
 	}
 	
 	.carousel-cell {

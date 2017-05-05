@@ -237,6 +237,13 @@ $padding-right-tablet: 5%;
 
 	@media only screen and (min-width: 375px) {
 
+		a .dish-img {
+		    width: 100px;
+		    height: 80px;
+		    margin-right: 100px;
+		    max-width: none;
+		}		
+
 		header {
 			img {
 				margin-left: $margin-left-mobile;
@@ -263,6 +270,8 @@ $padding-right-tablet: 5%;
 			margin-left: $margin-left-mobile;
 			margin-right: $margin-right-mobile;
 		}
+
+
 
 		.dishes {
 			h3 {

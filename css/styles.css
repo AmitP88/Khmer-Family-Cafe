@@ -4,6 +4,11 @@
   for styling higher level screensize layouts will be in the
   media_queries.css file.
 */
+
+/**{
+  border: 1px solid black !important;
+}*/
+
 html, body {
   color: white;
   background-color: black;
@@ -14,6 +19,10 @@ html, body {
 h1, h2, h3, h4, h5, header {
   font-family: 'Poiret One', cursive;
   padding-bottom: 1%; }
+
+  h3{
+    margin: auto;
+  }
 
 p {
   font-family: 'Roboto', sans-serif;
@@ -65,6 +74,10 @@ a:hover {
 .dish a {
   width: 60px;
   height: 60px; }
+
+.dish img{
+  display: inline;
+}
 
 nav li {
   float: left;
@@ -293,15 +306,15 @@ p {
   font-weight: 600; }
 
 .dish {
-  display: inline-flex;
+  display: flex;
   padding-bottom: 10%;
   margin-right: 5%; }
 
 .menu-title {
   display: inline-flex; }
 
-.dish {
-  width: 110%; }
+/*.dish {
+  width: 110%; }*/
 
 .modal {
   z-index: 10000; }
@@ -333,3 +346,34 @@ ul {
   padding-bottom: 5%; }
 
 /*# sourceMappingURL=styles.css.map */
+#dessert-column{
+  padding: 0 !important;
+}
+
+@media only screen and (max-width: 1517px) {
+      #dessert-column .dish:first-of-type div:nth-child(4) p:first-child{
+        font-size: 1.2em;
+        flex-grow: 2;
+      }      
+    }
+
+    @media only screen and (max-width: 1120px) {
+      #dessert-column .dish:first-of-type div:nth-child(4) p:first-child{
+        font-size: 1em;
+        height: 100%;
+      }      
+    }
+
+
+
+    @media only screen and (max-width: 1340px) {
+      #dessert-column .dish:first-of-type div:nth-child(3) h3:first-child{
+        width: 200px;
+      } 
+    }
+
+    @media only screen and (max-width: 374px) {
+      #dessert-column .dish:first-of-type div:nth-child(3) h3:first-child{
+        width: 100%;
+      } 
+    }

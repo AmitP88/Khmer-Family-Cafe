@@ -5,7 +5,7 @@
   a .dish-img {
     width: 60px;
     height: 60px;
-    margin-right: 60px; }
+    /*margin-right: 60px*/; }
 
   .intro, .dishes, .catering, .about {
     padding-bottom: 20%; }
@@ -24,8 +24,8 @@
     width: 170px;
     padding: 5%;
     font-size: 18px; }
-  .dishes p {
-    padding-top: 20%; }
+  /*.dishes p {
+    padding-top: 20%; }*/
 
   header h1 {
     font-size: 35px;
@@ -123,7 +123,7 @@
   a .dish-img {
     width: 100px;
     height: 80px;
-    margin-right: 100px;
+    /*margin-right: 100px;*/
     max-width: none; }
 
   header img {

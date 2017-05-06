@@ -172,7 +172,7 @@ menu.display = function(foodArray, pageLocation){
 
 
 
-    var ModalTrigger = '<div><a data-toggle="modal" data-target="#%data%">' + formattedPic + '</a></div>';
+    var ModalTrigger = '<div><a data-toggle="modal" data-target="#%data%">' + formattedPic + '<i class="fa fa-clone fa-lg" aria-hidden="true"></i>' + '</a></div>';
 	var formattedModalTrigger = ModalTrigger.replace("%data%", dish.id);
 
     var HTMLdishContainer = '<div class="dish">' + formattedModalTrigger + formattedModal + HTMLdishInfoContainer + '</div>';

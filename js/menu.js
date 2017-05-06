@@ -113,7 +113,7 @@ var menu = {
 		{
 			"id": "khmer-shaved-ice",
 			"name": "khmer Shaved Ice",
-			"price": "$1.50 (Kids size), $3.00 (Regular size)",
+			"price": "$1.50 (kids ), $3.00 (reg)",
 			"description": "Flavored ice topped with condense milk. Choose your ice flavor from: Tigers Blood (combination of watermelon, strawberry, and a small hint of coconut), pineapple, blue berry, bubblegum, cherry, Red Asian, and Green Asian.",
 			"image": "images/dishes/khmer-shaved-ice.jpg",
 			"altText": "khmer-shaved-ice"

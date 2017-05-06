@@ -346,3 +346,34 @@ ul {
   padding-bottom: 5%; }
 
 /*# sourceMappingURL=styles.css.map */
+#dessert-column{
+  padding: 0 !important;
+}
+
+@media only screen and (max-width: 1517px) {
+      #dessert-column .dish:first-of-type div:nth-child(4) p:first-child{
+        font-size: 1.2em;
+        flex-grow: 2;
+      }      
+    }
+
+    @media only screen and (max-width: 1120px) {
+      #dessert-column .dish:first-of-type div:nth-child(4) p:first-child{
+        font-size: 1em;
+        height: 100%;
+      }      
+    }
+
+
+
+    @media only screen and (max-width: 1340px) {
+      #dessert-column .dish:first-of-type div:nth-child(3) h3:first-child{
+        width: 200px;
+      } 
+    }
+
+    @media only screen and (max-width: 374px) {
+      #dessert-column .dish:first-of-type div:nth-child(3) h3:first-child{
+        width: 100%;
+      } 
+    }
